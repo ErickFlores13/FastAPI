@@ -1,10 +1,13 @@
 from typing import Union
 from fastapi import FastAPI
 from models.item_model import Item
+from router.router import user
 
 
 #Creation of an a FastAPI application
 app = FastAPI()
+
+app.include_router(user)
 
 @app.get("/")
 def read_root():
