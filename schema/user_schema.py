@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class UserSchema(BaseModel):
-    id: Optional[str]
+    id: Optional[int]
     name: str
     username: str
     user_password: str
